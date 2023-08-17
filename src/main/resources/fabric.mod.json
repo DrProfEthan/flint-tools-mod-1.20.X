@@ -3,9 +3,9 @@
 	"id": "flint-tools",
 	"version": "${version}",
 	"name": "Flint Tools",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This mod replaces wooden tools with flint tools",
 	"authors": [
-		"Me!"
+		"DrProfEthan"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,10 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"name.drprfethan.flinttools.ExampleMod"
+			"name.drprfethan.flinttools.FlintTools"
+		],
+		"client": [
+			"name.drprfethan.flinttools.FlintToolsClient"
 		],
 		"fabric-datagen": [
-			"name.drprfethan.flinttools.ExampleModDataGenerator"
+			"name.drprfethan.flinttools.FlintToolsDataGenerator"
 		]
 	},
 	"mixins": [
