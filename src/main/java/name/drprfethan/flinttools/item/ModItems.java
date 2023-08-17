@@ -13,9 +13,17 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item FLINT_AXE = registerItem("flint_axe", new Item(new FabricItemSettings()));
+    public static final Item FLINT_HOE = registerItem("flint_hoe", new Item(new FabricItemSettings()));
+    public static final Item FLINT_PICKAXE = registerItem("flint_pickaxe", new Item(new FabricItemSettings()));
+    public static final Item FLINT_SHOVEL = registerItem("flint_shovel", new Item(new FabricItemSettings()));
+    public static final Item FLINT_SWORD = registerItem("flint_sword", new Item(new FabricItemSettings()));
 
     private static void addItemsToToolsItemGroup(FabricItemGroupEntries entries) {
         entries.add(FLINT_AXE);
+        entries.add(FLINT_HOE);
+        entries.add(FLINT_PICKAXE);
+        entries.add(FLINT_SHOVEL);
+        entries.add(FLINT_SWORD);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(FlintTools.MOD_ID, name), item);
